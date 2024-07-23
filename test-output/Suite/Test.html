@@ -1,0 +1,1131 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>67/10/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sat Dec 23 11:26:00 IST 2023</td>
+</tr>
+<tr><td>Total time:</td><td>468 seconds (468555 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.Bdt.qa.Testcases.CoursepageTest.validate_CandDataStructurepage_Title()'><b>validate_CandDataStructurepage_Title</b><br>Test class: com.Bdt.qa.Testcases.CoursepageTest</td>
+<td><div><pre>java.lang.AssertionError: expected [C Programming for Beginners  | Learn Online C Programming | Bestdotnettraining] but found [C Programming for Beginners | Learn Online C Programming | Bestdotnettraining]
+	at com.Bdt.qa.Testcases.CoursepageTest.validate_CandDataStructurepage_Title(CoursepageTest.java:544)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace83140836", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace83140836'><pre>java.lang.AssertionError: expected [C Programming for Beginners  | Learn Online C Programming | Bestdotnettraining] but found [C Programming for Beginners | Learn Online C Programming | Bestdotnettraining]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at com.Bdt.qa.Testcases.CoursepageTest.validate_CandDataStructurepage_Title(CoursepageTest.java:544)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.Bdt.qa.Testcases.CoursepageTest@14028087</td></tr>
+<tr>
+<td title='com.Bdt.qa.Testcases.CoursepageTest.validate_oopsAndCpluspluspage_Title()'><b>validate_oopsAndCpluspluspage_Title</b><br>Test class: com.Bdt.qa.Testcases.CoursepageTest</td>
+<td><div><pre>java.lang.AssertionError: expected [Best C++ Online Training | OOPs  Online Tutorials] but found [Best C++ Online Training | OOPs Online Tutorials]
+	at com.Bdt.qa.Testcases.CoursepageTest.validate_oopsAndCpluspluspage_Title(CoursepageTest.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1861377027", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1861377027'><pre>java.lang.AssertionError: expected [Best C++ Online Training | OOPs  Online Tutorials] but found [Best C++ Online Training | OOPs Online Tutorials]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at com.Bdt.qa.Testcases.CoursepageTest.validate_oopsAndCpluspluspage_Title(CoursepageTest.java:565)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.Bdt.qa.Testcases.CoursepageTest@14028087</td></tr>
+<tr>
+<td title='com.Bdt.qa.Testcases.CoursepageTest.validate_seleniumWithCSharppage_Title()'><b>validate_seleniumWithCSharppage_Title</b><br>Test class: com.Bdt.qa.Testcases.CoursepageTest</td>
+<td><div><pre>java.lang.AssertionError: expected [Selenium with C# online tutorial | Selenium Testing Training ] but found [Selenium with C# online tutorial | Selenium Testing Training]
+	at com.Bdt.qa.Testcases.CoursepageTest.validate_seleniumWithCSharppage_Title(CoursepageTest.java:524)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1738132973", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1738132973'><pre>java.lang.AssertionError: expected [Selenium with C# online tutorial | Selenium Testing Training ] but found [Selenium with C# online tutorial | Selenium Testing Training]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at com.Bdt.qa.Testcases.CoursepageTest.validate_seleniumWithCSharppage_Title(CoursepageTest.java:524)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>1</td>
+<td>com.Bdt.qa.Testcases.CoursepageTest@14028087</td></tr>
+<tr>
+<td title='com.Bdt.qa.Testcases.CoursepageTest.validate_powershellpage_Title()'><b>validate_powershellpage_Title</b><br>Test class: com.Bdt.qa.Testcases.CoursepageTest</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a href=&quot;/courses/powershell-online-training&quot;&gt;...&lt;/a&gt; is not clickable at point (949, 663). Other element would receive the click: &lt;span class=&quot;dib-mid&quot;&gt;...&lt;/span&gt;
+  (Session info: chrome=120.0.6099.129)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [46d06e1356997a0ba121a7b95c0b7977, clickElement {id=C669CF51ECBAFDF6780583B2DDF3913D_element_132}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.129, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\new\AppData\Local\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63678}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63678/devtoo..., se:cdpVersion: 120.0.6099.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (46d06e1356997a0ba121a7b95c0b7977)] -&gt; xpath: //li/a[contains(text(),&apos;Powershell&apos;)]]
+Session ID: 46d06e1356997a0ba121a7b95c0b7977
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
+	at com.Bdt.qa.Pages.Coursespage.powershell(Coursespage.java:397)
+	at com.Bdt.qa.Testcases.CoursepageTest.validate_powershellpage_Title(CoursepageTest.java:450)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1101699580", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1101699580'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a href=&quot;/courses/powershell-online-training&quot;&gt;...&lt;/a&gt; is not clickable at point (949, 663). Other element would receive the click: &lt;span class=&quot;dib-mid&quot;&gt;...&lt;/span&gt;
+  (Session info: chrome=120.0.6099.129)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [46d06e1356997a0ba121a7b95c0b7977, clickElement {id=C669CF51ECBAFDF6780583B2DDF3913D_element_132}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.129, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\new\AppData\Local\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63678}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63678/devtoo..., se:cdpVersion: 120.0.6099.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (46d06e1356997a0ba121a7b95c0b7977)] -&gt; xpath: //li/a[contains(text(),&apos;Powershell&apos;)]]
+Session ID: 46d06e1356997a0ba121a7b95c0b7977
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
+	at com.Bdt.qa.Pages.Coursespage.powershell(Coursespage.java:397)
+	at com.Bdt.qa.Testcases.CoursepageTest.validate_powershellpage_Title(CoursepageTest.java:450)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>1</td>
+<td>com.Bdt.qa.Testcases.CoursepageTest@14028087</td></tr>
+<tr>
+<td title='com.Bdt.qa.Testcases.CoursepageTest.validate_msPowerPlatform_premiumpage_Title()'><b>validate_msPowerPlatform_premiumpage_Title</b><br>Test class: com.Bdt.qa.Testcases.CoursepageTest</td>
+<td><div><pre>org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression //li/a[contains(text(),&apos;//li/a[@class=&apos;coursecategory&apos;][contains(text(),&apos;Microsoft Power Platform&apos;)]&apos;)] because of the following error:
+SyntaxError: Failed to execute &apos;evaluate&apos; on &apos;Document&apos;: The string &apos;//li/a[contains(text(),&apos;//li/a[@class=&apos;coursecategory&apos;][contains(text(),&apos;Microsoft Power Platform&apos;)]&apos;)]&apos; is not a valid XPath expression.
+  (Session info: chrome=120.0.6099.129)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [adbd47cbd7aefa4f936147a56cd27c01, findElement {using=xpath, value=//li/a[contains(text(),&apos;//li/a[@class=&apos;coursecategory&apos;][contains(text(),&apos;Microsoft Power Platform&apos;)]&apos;)]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.129, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\new\AppData\Local\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63736}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63736/devtoo..., se:cdpVersion: 120.0.6099.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: adbd47cbd7aefa4f936147a56cd27c01
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
+	at com.Bdt.qa.Pages.Coursespage.msPowerPlatform_premiun(Coursespage.java:402)
+	at com.Bdt.qa.Testcases.CoursepageTest.validate_msPowerPlatform_premiumpage_Title(CoursepageTest.java:460)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1977359706", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1977359706'><pre>org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression //li/a[contains(text(),&apos;//li/a[@class=&apos;coursecategory&apos;][contains(text(),&apos;Microsoft Power Platform&apos;)]&apos;)] because of the following error:
+SyntaxError: Failed to execute &apos;evaluate&apos; on &apos;Document&apos;: The string &apos;//li/a[contains(text(),&apos;//li/a[@class=&apos;coursecategory&apos;][contains(text(),&apos;Microsoft Power Platform&apos;)]&apos;)]&apos; is not a valid XPath expression.
+  (Session info: chrome=120.0.6099.129)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [adbd47cbd7aefa4f936147a56cd27c01, findElement {using=xpath, value=//li/a[contains(text(),&apos;//li/a[@class=&apos;coursecategory&apos;][contains(text(),&apos;Microsoft Power Platform&apos;)]&apos;)]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.129, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\new\AppData\Local\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63736}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63736/devtoo..., se:cdpVersion: 120.0.6099.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: adbd47cbd7aefa4f936147a56cd27c01
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
+	at com.Bdt.qa.Pages.Coursespage.msPowerPlatform_premiun(Coursespage.java:402)
+	at com.Bdt.qa.Testcases.CoursepageTest.validate_msPowerPlatform_premiumpage_Title(CoursepageTest.java:460)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.Bdt.qa.Testcases.CoursepageTest@14028087</td></tr>
+<tr>
+<td title='com.Bdt.qa.Testcases.CoursepageTest.validate_ssaspage_Title()'><b>validate_ssaspage_Title</b><br>Test class: com.Bdt.qa.Testcases.CoursepageTest</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a href=&quot;/courses/ssas-online-training&quot;&gt;...&lt;/a&gt; is not clickable at point (569, 654). Other element would receive the click: &lt;span class=&quot;dib-mid&quot;&gt;...&lt;/span&gt;
+  (Session info: chrome=120.0.6099.129)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [97b98f3ddee642337011b9c5dfc845a6, clickElement {id=C5222A07CF6FA6AE280B151B33B58EE3_element_123}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.129, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\new\AppData\Local\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62721}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62721/devtoo..., se:cdpVersion: 120.0.6099.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (97b98f3ddee642337011b9c5dfc845a6)] -&gt; xpath: //li/a[contains(text(),&apos;SQL Service Analysis Service (SSAS)&apos;)]]
+Session ID: 97b98f3ddee642337011b9c5dfc845a6
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
+	at com.Bdt.qa.Pages.Coursespage.ssas(Coursespage.java:322)
+	at com.Bdt.qa.Testcases.CoursepageTest.validate_ssaspage_Title(CoursepageTest.java:300)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace966443427", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace966443427'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a href=&quot;/courses/ssas-online-training&quot;&gt;...&lt;/a&gt; is not clickable at point (569, 654). Other element would receive the click: &lt;span class=&quot;dib-mid&quot;&gt;...&lt;/span&gt;
+  (Session info: chrome=120.0.6099.129)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [97b98f3ddee642337011b9c5dfc845a6, clickElement {id=C5222A07CF6FA6AE280B151B33B58EE3_element_123}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.129, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\new\AppData\Local\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62721}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62721/devtoo..., se:cdpVersion: 120.0.6099.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (97b98f3ddee642337011b9c5dfc845a6)] -&gt; xpath: //li/a[contains(text(),&apos;SQL Service Analysis Service (SSAS)&apos;)]]
+Session ID: 97b98f3ddee642337011b9c5dfc845a6
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
+	at com.Bdt.qa.Pages.Coursespage.ssas(Coursespage.java:322)
+	at com.Bdt.qa.Testcases.CoursepageTest.validate_ssaspage_Title(CoursepageTest.java:300)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>1</td>
+<td>com.Bdt.qa.Testcases.CoursepageTest@14028087</td></tr>
+<tr>
+<td title='com.Bdt.qa.Testcases.CoursepageTest.validate_ssrspage_Title()'><b>validate_ssrspage_Title</b><br>Test class: com.Bdt.qa.Testcases.CoursepageTest</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a href=&quot;/courses/ssrs-online-training&quot;&gt;...&lt;/a&gt; is not clickable at point (569, 628). Other element would receive the click: &lt;div id=&quot;gdprbanner&quot; class=&quot;siq-msgbanr&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=120.0.6099.129)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e1f30fa61974491ac5b4596a47185d19, clickElement {id=73F0B2BF52C2B043036412FD5B95AE3C_element_122}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.129, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\new\AppData\Local\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62657}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62657/devtoo..., se:cdpVersion: 120.0.6099.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (e1f30fa61974491ac5b4596a47185d19)] -&gt; xpath: //li/a[contains(text(),&apos;SQL Server Reporting Service (SSRS)&apos;)]]
+Session ID: e1f30fa61974491ac5b4596a47185d19
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
+	at com.Bdt.qa.Pages.Coursespage.ssrs(Coursespage.java:316)
+	at com.Bdt.qa.Testcases.CoursepageTest.validate_ssrspage_Title(CoursepageTest.java:289)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace599936014", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace599936014'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a href=&quot;/courses/ssrs-online-training&quot;&gt;...&lt;/a&gt; is not clickable at point (569, 628). Other element would receive the click: &lt;div id=&quot;gdprbanner&quot; class=&quot;siq-msgbanr&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=120.0.6099.129)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e1f30fa61974491ac5b4596a47185d19, clickElement {id=73F0B2BF52C2B043036412FD5B95AE3C_element_122}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.129, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\new\AppData\Local\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62657}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62657/devtoo..., se:cdpVersion: 120.0.6099.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (e1f30fa61974491ac5b4596a47185d19)] -&gt; xpath: //li/a[contains(text(),&apos;SQL Server Reporting Service (SSRS)&apos;)]]
+Session ID: e1f30fa61974491ac5b4596a47185d19
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
+	at com.Bdt.qa.Pages.Coursespage.ssrs(Coursespage.java:316)
+	at com.Bdt.qa.Testcases.CoursepageTest.validate_ssrspage_Title(CoursepageTest.java:289)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>1</td>
+<td>com.Bdt.qa.Testcases.CoursepageTest@14028087</td></tr>
+<tr>
+<td title='com.Bdt.qa.Testcases.CoursepageTest.validate_da_100page_Title()'><b>validate_da_100page_Title</b><br>Test class: com.Bdt.qa.Testcases.CoursepageTest</td>
+<td><div><pre>java.lang.AssertionError: expected [DA-100 Online training | Exam:DA-100 Online training ] but found [DA-100 Online training | Exam:DA-100 Online training]
+	at com.Bdt.qa.Testcases.CoursepageTest.validate_da_100page_Title(CoursepageTest.java:484)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2025173753", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2025173753'><pre>java.lang.AssertionError: expected [DA-100 Online training | Exam:DA-100 Online training ] but found [DA-100 Online training | Exam:DA-100 Online training]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at com.Bdt.qa.Testcases.CoursepageTest.validate_da_100page_Title(CoursepageTest.java:484)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.Bdt.qa.Testcases.CoursepageTest@14028087</td></tr>
+<tr>
+<td title='com.Bdt.qa.Testcases.HomepageTest.validateTitleOfVideospage()'><b>validateTitleOfVideospage</b><br>Test class: com.Bdt.qa.Testcases.HomepageTest</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 20.000
+  (Session info: chrome=120.0.6099.129)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [213babea452b891b0ae18734872e0f68, clickElement {id=FE79650DCCBF9850112FC8766470133E_element_95}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.129, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\new\AppData\Local\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60729}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60729/devtoo..., se:cdpVersion: 120.0.6099.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (213babea452b891b0ae18734872e0f68)] -&gt; xpath: //a[contains(text(),&apos;Videos&apos;)]]
+Session ID: 213babea452b891b0ae18734872e0f68
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
+	at com.Bdt.qa.Pages.Homepage.videos(Homepage.java:67)
+	at com.Bdt.qa.Testcases.HomepageTest.validateTitleOfVideospage(HomepageTest.java:81)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2036353726", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2036353726'><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 20.000
+  (Session info: chrome=120.0.6099.129)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [213babea452b891b0ae18734872e0f68, clickElement {id=FE79650DCCBF9850112FC8766470133E_element_95}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.129, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\new\AppData\Local\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60729}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60729/devtoo..., se:cdpVersion: 120.0.6099.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (213babea452b891b0ae18734872e0f68)] -&gt; xpath: //a[contains(text(),&apos;Videos&apos;)]]
+Session ID: 213babea452b891b0ae18734872e0f68
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
+	at com.Bdt.qa.Pages.Homepage.videos(Homepage.java:67)
+	at com.Bdt.qa.Testcases.HomepageTest.validateTitleOfVideospage(HomepageTest.java:81)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>20</td>
+<td>com.Bdt.qa.Testcases.HomepageTest@5386659f</td></tr>
+<tr>
+<td title='com.Bdt.qa.Testcases.CoursepageTest.validate_iacUsingTerraformpage_Title()'><b>validate_iacUsingTerraformpage_Title</b><br>Test class: com.Bdt.qa.Testcases.CoursepageTest</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a href=&quot;/courses/terraform-online-training&quot;&gt;...&lt;/a&gt; is not clickable at point (949, 632). Other element would receive the click: &lt;span class=&quot;dib-mid&quot;&gt;...&lt;/span&gt;
+  (Session info: chrome=120.0.6099.129)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [39258370548ce4573c42ae9395a78913, clickElement {id=B46FAB4A1EBF6A93E7F0E4EE090ABC4D_element_124}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.129, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\new\AppData\Local\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63618}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63618/devtoo..., se:cdpVersion: 120.0.6099.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (39258370548ce4573c42ae9395a78913)] -&gt; xpath: //li/a[contains(text(),&apos;IaC Using Terraform&apos;)]]
+Session ID: 39258370548ce4573c42ae9395a78913
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
+	at com.Bdt.qa.Pages.Coursespage.iacUsingTerraform(Coursespage.java:392)
+	at com.Bdt.qa.Testcases.CoursepageTest.validate_iacUsingTerraformpage_Title(CoursepageTest.java:440)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace71010740", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace71010740'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a href=&quot;/courses/terraform-online-training&quot;&gt;...&lt;/a&gt; is not clickable at point (949, 632). Other element would receive the click: &lt;span class=&quot;dib-mid&quot;&gt;...&lt;/span&gt;
+  (Session info: chrome=120.0.6099.129)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [39258370548ce4573c42ae9395a78913, clickElement {id=B46FAB4A1EBF6A93E7F0E4EE090ABC4D_element_124}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.129, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\new\AppData\Local\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63618}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63618/devtoo..., se:cdpVersion: 120.0.6099.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (39258370548ce4573c42ae9395a78913)] -&gt; xpath: //li/a[contains(text(),&apos;IaC Using Terraform&apos;)]]
+Session ID: 39258370548ce4573c42ae9395a78913
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
+	at com.Bdt.qa.Pages.Coursespage.iacUsingTerraform(Coursespage.java:392)
+	at com.Bdt.qa.Testcases.CoursepageTest.validate_iacUsingTerraformpage_Title(CoursepageTest.java:440)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>1</td>
+<td>com.Bdt.qa.Testcases.CoursepageTest@14028087</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.Bdt.qa.Testcases.HomepageTest.validateTitleOfAzurecertificationPage()'><b>validateTitleOfAzurecertificationPage</b><br>Test class: com.Bdt.qa.Testcases.HomepageTest</td>
+<td></td>
+<td>2</td>
+<td>com.Bdt.qa.Testcases.HomepageTest@5386659f</td></tr>
+<tr>
+<td title='com.Bdt.qa.Testcases.CoursepageTest.validate_awspage_Title()'><b>validate_awspage_Title</b><br>Test class: com.Bdt.qa.Testcases.CoursepageTest</td>
+<td></td>
+<td>0</td>
+<td>com.Bdt.qa.Testcases.CoursepageTest@14028087</td></tr>
+<tr>
+<td title='com.Bdt.qa.Testcases.PackagepageTest.validateMsAzureSuiteAndSuitepluspageTitle()'><b>validateMsAzureSuiteAndSuitepluspageTitle</b><br>Test class: com.Bdt.qa.Testcases.PackagepageTest</td>
+<td></td>
+<td>2</td>
+<td>com.Bdt.qa.Testcases.PackagepageTest@74d1dc36</td></tr>
+<tr>
+<td title='com.Bdt.qa.Testcases.CoursepageTest.validate_azureSuitepage_Title()'><b>validate_azureSuitepage_Title</b><br>Test class: com.Bdt.qa.Testcases.CoursepageTest</td>
+<td></td>
+<td>1</td>
+<td>com.Bdt.qa.Testcases.CoursepageTest@14028087</td></tr>
+<tr>
+<td title='com.Bdt.qa.Testcases.HomepageTest.validateTitleofPackagespage()'><b>validateTitleofPackagespage</b><br>Test class: com.Bdt.qa.Testcases.HomepageTest</td>
+<td></td>
+<td>0</td>
+<td>com.Bdt.qa.Testcases.HomepageTest@5386659f</td></tr>
+<tr>
+<td title='com.Bdt.qa.Testcases.CoursepageTest.validate_az_305page_Title()'><b>validate_az_305page_Title</b><br>Test class: com.Bdt.qa.Testcases.CoursepageTest</td>
+<td></td>
+<td>0</td>
+<td>com.Bdt.qa.Testcases.CoursepageTest@14028087</td></tr>
+<tr>
+<td title='com.Bdt.qa.Testcases.CoursepageTest.validate_az_104page_Title()'><b>validate_az_104page_Title</b><br>Test class: com.Bdt.qa.Testcases.CoursepageTest</td>
+<td></td>
+<td>1</td>
+<td>com.Bdt.qa.Testcases.CoursepageTest@14028087</td></tr>
+<tr>
+<td title='com.Bdt.qa.Testcases.CoursepageTest.validate_devopsExpertMicroservicespage_Title()'><b>validate_devopsExpertMicroservicespage_Title</b><br>Test class: com.Bdt.qa.Testcases.CoursepageTest</td>
+<td></td>
+<td>0</td>
+<td>com.Bdt.qa.Testcases.CoursepageTest@14028087</td></tr>
+<tr>
+<td title='com.Bdt.qa.Testcases.CoursepageTest.validate_microservices_using_NET_Corepage_Title()'><b>validate_microservices_using_NET_Corepage_Title</b><br>Test class: com.Bdt.qa.Testcases.CoursepageTest</td>
+<td></td>
+<td>0</td>
+<td>com.Bdt.qa.Testcases.CoursepageTest@14028087</td></tr>
+<tr>
+<td title='com.Bdt.qa.Testcases.CoursepageTest.validate_seleniumWithJAVApage_Title()'><b>validate_seleniumWithJAVApage_Title</b><br>Test class: com.Bdt.qa.Testcases.CoursepageTest</td>
+<td></td>
+<td>0</td>
+<td>com.Bdt.qa.Testcases.CoursepageTest@14028087</td></tr>
+<tr>
+<td title='com.Bdt.qa.Testcases.PackagepageTest.validateSQLServerandMSBIToolspageTitle()'><b>validateSQLServerandMSBIToolspageTitle</b><br>Test class: com.Bdt.qa.Testcases.PackagepageTest</td>
+<td></td>
+<td>1</td>
+<td>com.Bdt.qa.Testcases.PackagepageTest@74d1dc36</td></tr>
+<tr>
+<td title='com.Bdt.qa.Testcases.CoursepageTest.validate_wpf_incl_MVVM_and_Prismpage_Title()'><b>validate_wpf_incl_MVVM_and_Prismpage_Title</b><br>Test class: com.Bdt.qa.Testcases.CoursepageTest</td>
+<td></td>
+<td>0</td>
+<td>com.Bdt.qa.Testcases.CoursepageTest@14028087</td></tr>
+<tr>
+<td title='com.Bdt.qa.Testcases.LoginTest.verifyLoginWithValidCredentials()'><b>verifyLoginWithValidCredentials</b><br>Test class: com.Bdt.qa.Testcases.LoginTest</td>
+<td></td>
+<td>1</td>
+<td>com.Bdt.qa.Testcases.LoginTest@710c2b53</td></tr>
+<tr>
+<td title='com.Bdt.qa.Testcases.CoursepageTest.validate_dockerandKubernetespage_Title()'><b>validate_dockerandKubernetespage_Title</b><br>Test class: com.Bdt.qa.Testcases.CoursepageTest</td>
+<td></td>
+<td>0</td>
+<td>com.Bdt.qa.Testcases.CoursepageTest@14028087</td></tr>
+<tr>
+<td title='com.Bdt.qa.Testcases.CoursepageTest.validate_manualTestingpage_Title()'><b>validate_manualTestingpage_Title</b><br>Test class: com.Bdt.qa.Testcases.CoursepageTest</td>
+<td></td>
+<td>0</td>
+<td>com.Bdt.qa.Testcases.CoursepageTest@14028087</td></tr>
+<tr>
+<td title='com.Bdt.qa.Testcases.CoursepageTest.validate_advanceJAVApage_Title()'><b>validate_advanceJAVApage_Title</b><br>Test class: com.Bdt.qa.Testcases.CoursepageTest</td>
+<td></td>
+<td>0</td>
+<td>com.Bdt.qa.Testcases.CoursepageTest@14028087</td></tr>
+<tr>
+<td title='com.Bdt.qa.Testcases.CoursepageTest.validate_building_StsticWebpagesusingHTMLandCSSpage_Title()'><b>validate_building_StsticWebpagesusingHTMLandCSSpage_Title</b><br>Test class: com.Bdt.qa.Testcases.CoursepageTest</td>
+<td></td>
+<td>0</td>
+<td>com.Bdt.qa.Testcases.CoursepageTest@14028087</td></tr>
+<tr>
+<td title='com.Bdt.qa.Testcases.CoursepageTest.validate_ssispage_Title()'><b>validate_ssispage_Title</b><br>Test class: com.Bdt.qa.Testcases.CoursepageTest</td>
+<td></td>
+<td>0</td>
+<td>com.Bdt.qa.Testcases.CoursepageTest@14028087</td></tr>
+<tr>
+<td title='com.Bdt.qa.Testcases.CoursepageTest.validate_pythonProgrammingpage_Title()'><b>validate_pythonProgrammingpage_Title</b><br>Test class: com.Bdt.qa.Testcases.CoursepageTest</td>
+<td></td>
+<td>0</td>
+<td>com.Bdt.qa.Testcases.CoursepageTest@14028087</td></tr>
+<tr>
+<td title='com.Bdt.qa.Testcases.CoursepageTest.knockoutJSpage_Title()'><b>knockoutJSpage_Title</b><br>Test class: com.Bdt.qa.Testcases.CoursepageTest</td>
+<td></td>
+<td>0</td>
+<td>com.Bdt.qa.Testcases.CoursepageTest@14028087</td></tr>
+<tr>
+<td title='com.Bdt.qa.Testcases.PackagepageTest.validateSoftwareTestingpageTitle()'><b>validateSoftwareTestingpageTitle</b><br>Test class: com.Bdt.qa.Testcases.PackagepageTest</td>
+<td></td>
+<td>0</td>
+<td>com.Bdt.qa.Testcases.PackagepageTest@74d1dc36</td></tr>
+<tr>
+<td title='com.Bdt.qa.Testcases.CoursepageTest.validate_kubernetespage_Title()'><b>validate_kubernetespage_Title</b><br>Test class: com.Bdt.qa.Testcases.CoursepageTest</td>
+<td></td>
+<td>0</td>
+<td>com.Bdt.qa.Testcases.CoursepageTest@14028087</td></tr>
+<tr>
+<td title='com.Bdt.qa.Testcases.PackagepageTest.validateUIorWebDevelopmentpageTitle()'><b>validateUIorWebDevelopmentpageTitle</b><br>Test class: com.Bdt.qa.Testcases.PackagepageTest</td>
+<td></td>
+<td>1</td>
+<td>com.Bdt.qa.Testcases.PackagepageTest@74d1dc36</td></tr>
+<tr>
+<td title='com.Bdt.qa.Testcases.PackagepageTest.validateAzureDevopsExpertpageTitle()'><b>validateAzureDevopsExpertpageTitle</b><br>Test class: com.Bdt.qa.Testcases.PackagepageTest</td>
+<td></td>
+<td>1</td>
+<td>com.Bdt.qa.Testcases.PackagepageTest@74d1dc36</td></tr>
+<tr>
+<td title='com.Bdt.qa.Testcases.HomepageTest.validateTitleofContactuspage()'><b>validateTitleofContactuspage</b><br>Test class: com.Bdt.qa.Testcases.HomepageTest</td>
+<td></td>
+<td>0</td>
+<td>com.Bdt.qa.Testcases.HomepageTest@5386659f</td></tr>
+<tr>
+<td title='com.Bdt.qa.Testcases.CoursepageTest.validate_buildingInteractiveWbpagesUsingHTML5andCSS3page_Title()'><b>validate_buildingInteractiveWbpagesUsingHTML5andCSS3page_Title</b><br>Test class: com.Bdt.qa.Testcases.CoursepageTest</td>
+<td></td>
+<td>0</td>
+<td>com.Bdt.qa.Testcases.CoursepageTest@14028087</td></tr>
+<tr>
+<td title='com.Bdt.qa.Testcases.CoursepageTest.validate_sqlServer2017page_Title()'><b>validate_sqlServer2017page_Title</b><br>Test class: com.Bdt.qa.Testcases.CoursepageTest</td>
+<td></td>
+<td>1</td>
+<td>com.Bdt.qa.Testcases.CoursepageTest@14028087</td></tr>
+<tr>
+<td title='com.Bdt.qa.Testcases.PackagepageTest.validateDotNetDevelopersExpertpageTitle()'><b>validateDotNetDevelopersExpertpageTitle</b><br>Test class: com.Bdt.qa.Testcases.PackagepageTest</td>
+<td></td>
+<td>1</td>
+<td>com.Bdt.qa.Testcases.PackagepageTest@74d1dc36</td></tr>
+<tr>
+<td title='com.Bdt.qa.Testcases.CoursepageTest.validate_cloudComputingpage_Title()'><b>validate_cloudComputingpage_Title</b><br>Test class: com.Bdt.qa.Testcases.CoursepageTest</td>
+<td></td>
+<td>1</td>
+<td>com.Bdt.qa.Testcases.CoursepageTest@14028087</td></tr>
+<tr>
+<td title='com.Bdt.qa.Testcases.CoursepageTest.validate_az_204page_Title()'><b>validate_az_204page_Title</b><br>Test class: com.Bdt.qa.Testcases.CoursepageTest</td>
+<td></td>
+<td>1</td>
+<td>com.Bdt.qa.Testcases.CoursepageTest@14028087</td></tr>
+<tr>
+<td title='com.Bdt.qa.Testcases.HomepageTest.validateTitleOfCoursespage()'><b>validateTitleOfCoursespage</b><br>Test class: com.Bdt.qa.Testcases.HomepageTest</td>
+<td></td>
+<td>0</td>
+<td>com.Bdt.qa.Testcases.HomepageTest@5386659f</td></tr>
+<tr>
+<td title='com.Bdt.qa.Testcases.PackagepageTest.validateGoldMemberspageTitle()'><b>validateGoldMemberspageTitle</b><br>Test class: com.Bdt.qa.Testcases.PackagepageTest</td>
+<td></td>
+<td>2</td>
+<td>com.Bdt.qa.Testcases.PackagepageTest@74d1dc36</td></tr>
+<tr>
+<td title='com.Bdt.qa.Testcases.HomepageTest.validateTitleofEnrollnowPage()'><b>validateTitleofEnrollnowPage</b><br>Test class: com.Bdt.qa.Testcases.HomepageTest</td>
+<td></td>
+<td>0</td>
+<td>com.Bdt.qa.Testcases.HomepageTest@5386659f</td></tr>
+<tr>
+<td title='com.Bdt.qa.Testcases.CoursepageTest.validate_wcf_incl_Web_Services_and_Remotingpage_Title()'><b>validate_wcf_incl_Web_Services_and_Remotingpage_Title</b><br>Test class: com.Bdt.qa.Testcases.CoursepageTest</td>
+<td></td>
+<td>0</td>
+<td>com.Bdt.qa.Testcases.CoursepageTest@14028087</td></tr>
+<tr>
+<td title='com.Bdt.qa.Testcases.HomepageTest.validateTitleofTestimonialspage()'><b>validateTitleofTestimonialspage</b><br>Test class: com.Bdt.qa.Testcases.HomepageTest</td>
+<td></td>
+<td>0</td>
+<td>com.Bdt.qa.Testcases.HomepageTest@5386659f</td></tr>
+<tr>
+<td title='com.Bdt.qa.Testcases.CoursepageTest.validate_asp_NET_MVCpage_Title()'><b>validate_asp_NET_MVCpage_Title</b><br>Test class: com.Bdt.qa.Testcases.CoursepageTest</td>
+<td></td>
+<td>0</td>
+<td>com.Bdt.qa.Testcases.CoursepageTest@14028087</td></tr>
+<tr>
+<td title='com.Bdt.qa.Testcases.CoursepageTest.validate_live_Project_using_Ntier_Archpage_Title()'><b>validate_live_Project_using_Ntier_Archpage_Title</b><br>Test class: com.Bdt.qa.Testcases.CoursepageTest</td>
+<td></td>
+<td>0</td>
+<td>com.Bdt.qa.Testcases.CoursepageTest@14028087</td></tr>
+<tr>
+<td title='com.Bdt.qa.Testcases.CoursepageTest.sqlServerandMSBIpage_Title()'><b>sqlServerandMSBIpage_Title</b><br>Test class: com.Bdt.qa.Testcases.CoursepageTest</td>
+<td></td>
+<td>0</td>
+<td>com.Bdt.qa.Testcases.CoursepageTest@14028087</td></tr>
+<tr>
+<td title='com.Bdt.qa.Testcases.PackagepageTest.validatePowerplatformAcademypageTitle()'><b>validatePowerplatformAcademypageTitle</b><br>Test class: com.Bdt.qa.Testcases.PackagepageTest</td>
+<td></td>
+<td>3</td>
+<td>com.Bdt.qa.Testcases.PackagepageTest@74d1dc36</td></tr>
+<tr>
+<td title='com.Bdt.qa.Testcases.CoursepageTest.validate_queringDataWithTransactSqlpage_Title()'><b>validate_queringDataWithTransactSqlpage_Title</b><br>Test class: com.Bdt.qa.Testcases.CoursepageTest</td>
+<td></td>
+<td>1</td>
+<td>com.Bdt.qa.Testcases.CoursepageTest@14028087</td></tr>
+<tr>
+<td title='com.Bdt.qa.Testcases.CoursepageTest.validate_dockerpage_Title()'><b>validate_dockerpage_Title</b><br>Test class: com.Bdt.qa.Testcases.CoursepageTest</td>
+<td></td>
+<td>0</td>
+<td>com.Bdt.qa.Testcases.CoursepageTest@14028087</td></tr>
+<tr>
+<td title='com.Bdt.qa.Testcases.CoursepageTest.validate_linq_and_Entity_Frameworkpage_Title()'><b>validate_linq_and_Entity_Frameworkpage_Title</b><br>Test class: com.Bdt.qa.Testcases.CoursepageTest</td>
+<td></td>
+<td>1</td>
+<td>com.Bdt.qa.Testcases.CoursepageTest@14028087</td></tr>
+<tr>
+<td title='com.Bdt.qa.Testcases.CoursepageTest.validate_testing_toolspage_Title()'><b>validate_testing_toolspage_Title</b><br>Test class: com.Bdt.qa.Testcases.CoursepageTest</td>
+<td></td>
+<td>0</td>
+<td>com.Bdt.qa.Testcases.CoursepageTest@14028087</td></tr>
+<tr>
+<td title='com.Bdt.qa.Testcases.CoursepageTest.validate_angularJSpage_Title()'><b>validate_angularJSpage_Title</b><br>Test class: com.Bdt.qa.Testcases.CoursepageTest</td>
+<td></td>
+<td>0</td>
+<td>com.Bdt.qa.Testcases.CoursepageTest@14028087</td></tr>
+<tr>
+<td title='com.Bdt.qa.Testcases.PackagepageTest.validateMsDotNetFoundationForBeginnerspageTitle()'><b>validateMsDotNetFoundationForBeginnerspageTitle</b><br>Test class: com.Bdt.qa.Testcases.PackagepageTest</td>
+<td></td>
+<td>1</td>
+<td>com.Bdt.qa.Testcases.PackagepageTest@74d1dc36</td></tr>
+<tr>
+<td title='com.Bdt.qa.Testcases.PackagepageTest.validateMsDotNetFullStackDeveloperpageTitle()'><b>validateMsDotNetFullStackDeveloperpageTitle</b><br>Test class: com.Bdt.qa.Testcases.PackagepageTest</td>
+<td></td>
+<td>2</td>
+<td>com.Bdt.qa.Testcases.PackagepageTest@74d1dc36</td></tr>
+<tr>
+<td title='com.Bdt.qa.Testcases.CoursepageTest.validate_live_Project_Training_for_Developing_Enterprise_applicationpage_Title()'><b>validate_live_Project_Training_for_Developing_Enterprise_applicationpage_Title</b><br>Test class: com.Bdt.qa.Testcases.CoursepageTest</td>
+<td></td>
+<td>0</td>
+<td>com.Bdt.qa.Testcases.CoursepageTest@14028087</td></tr>
+<tr>
+<td title='com.Bdt.qa.Testcases.HomepageTest.vaildateTitleofNewBatchespage()'><b>vaildateTitleofNewBatchespage</b><br>Test class: com.Bdt.qa.Testcases.HomepageTest</td>
+<td></td>
+<td>0</td>
+<td>com.Bdt.qa.Testcases.HomepageTest@5386659f</td></tr>
+<tr>
+<td title='com.Bdt.qa.Testcases.CoursepageTest.validate_dp_203page_Title()'><b>validate_dp_203page_Title</b><br>Test class: com.Bdt.qa.Testcases.CoursepageTest</td>
+<td></td>
+<td>0</td>
+<td>com.Bdt.qa.Testcases.CoursepageTest@14028087</td></tr>
+<tr>
+<td title='com.Bdt.qa.Testcases.CoursepageTest.validate_coreJAVApage_Title()'><b>validate_coreJAVApage_Title</b><br>Test class: com.Bdt.qa.Testcases.CoursepageTest</td>
+<td></td>
+<td>0</td>
+<td>com.Bdt.qa.Testcases.CoursepageTest@14028087</td></tr>
+<tr>
+<td title='com.Bdt.qa.Testcases.CoursepageTest.xamarinpage_Title()'><b>xamarinpage_Title</b><br>Test class: com.Bdt.qa.Testcases.CoursepageTest</td>
+<td></td>
+<td>0</td>
+<td>com.Bdt.qa.Testcases.CoursepageTest@14028087</td></tr>
+<tr>
+<td title='com.Bdt.qa.Testcases.CoursepageTest.validate_javascriptAndHTMLdompage_Title()'><b>validate_javascriptAndHTMLdompage_Title</b><br>Test class: com.Bdt.qa.Testcases.CoursepageTest</td>
+<td></td>
+<td>0</td>
+<td>com.Bdt.qa.Testcases.CoursepageTest@14028087</td></tr>
+<tr>
+<td title='com.Bdt.qa.Testcases.LoginTest.verifyLoginwithInvalidEmailandValidPassword()'><b>verifyLoginwithInvalidEmailandValidPassword</b><br>Test class: com.Bdt.qa.Testcases.LoginTest</td>
+<td></td>
+<td>0</td>
+<td>com.Bdt.qa.Testcases.LoginTest@710c2b53</td></tr>
+<tr>
+<td title='com.Bdt.qa.Testcases.CoursepageTest.validate_az_400page_Title()'><b>validate_az_400page_Title</b><br>Test class: com.Bdt.qa.Testcases.CoursepageTest</td>
+<td></td>
+<td>1</td>
+<td>com.Bdt.qa.Testcases.CoursepageTest@14028087</td></tr>
+<tr>
+<td title='com.Bdt.qa.Testcases.CoursepageTest.validate_bootstrappage_Title()'><b>validate_bootstrappage_Title</b><br>Test class: com.Bdt.qa.Testcases.CoursepageTest</td>
+<td></td>
+<td>0</td>
+<td>com.Bdt.qa.Testcases.CoursepageTest@14028087</td></tr>
+<tr>
+<td title='com.Bdt.qa.Testcases.CoursepageTest.reactJSpage_Title()'><b>reactJSpage_Title</b><br>Test class: com.Bdt.qa.Testcases.CoursepageTest</td>
+<td></td>
+<td>0</td>
+<td>com.Bdt.qa.Testcases.CoursepageTest@14028087</td></tr>
+<tr>
+<td title='com.Bdt.qa.Testcases.CoursepageTest.validate_asp_NET_WebFormspage_Title()'><b>validate_asp_NET_WebFormspage_Title</b><br>Test class: com.Bdt.qa.Testcases.CoursepageTest</td>
+<td></td>
+<td>0</td>
+<td>com.Bdt.qa.Testcases.CoursepageTest@14028087</td></tr>
+<tr>
+<td title='com.Bdt.qa.Testcases.CoursepageTest.validate_client_side_UI_technologiespage_Title()'><b>validate_client_side_UI_technologiespage_Title</b><br>Test class: com.Bdt.qa.Testcases.CoursepageTest</td>
+<td></td>
+<td>0</td>
+<td>com.Bdt.qa.Testcases.CoursepageTest@14028087</td></tr>
+<tr>
+<td title='com.Bdt.qa.Testcases.CoursepageTest.validate_ms_NET_Coursespage_Title()'><b>validate_ms_NET_Coursespage_Title</b><br>Test class: com.Bdt.qa.Testcases.CoursepageTest</td>
+<td></td>
+<td>0</td>
+<td>com.Bdt.qa.Testcases.CoursepageTest@14028087</td></tr>
+<tr>
+<td title='com.Bdt.qa.Testcases.LoginTest.verifyLoginwithValidEmailandInvalidPassword()'><b>verifyLoginwithValidEmailandInvalidPassword</b><br>Test class: com.Bdt.qa.Testcases.LoginTest</td>
+<td></td>
+<td>0</td>
+<td>com.Bdt.qa.Testcases.LoginTest@710c2b53</td></tr>
+<tr>
+<td title='com.Bdt.qa.Testcases.CoursepageTest.validate_az_900page_Title()'><b>validate_az_900page_Title</b><br>Test class: com.Bdt.qa.Testcases.CoursepageTest</td>
+<td></td>
+<td>0</td>
+<td>com.Bdt.qa.Testcases.CoursepageTest@14028087</td></tr>
+<tr>
+<td title='com.Bdt.qa.Testcases.CoursepageTest.validate_msPowerplatform_newpage_Title()'><b>validate_msPowerplatform_newpage_Title</b><br>Test class: com.Bdt.qa.Testcases.CoursepageTest</td>
+<td></td>
+<td>0</td>
+<td>com.Bdt.qa.Testcases.CoursepageTest@14028087</td></tr>
+<tr>
+<td title='com.Bdt.qa.Testcases.CoursepageTest.angular_Typescriptpage_Title()'><b>angular_Typescriptpage_Title</b><br>Test class: com.Bdt.qa.Testcases.CoursepageTest</td>
+<td></td>
+<td>1</td>
+<td>com.Bdt.qa.Testcases.CoursepageTest@14028087</td></tr>
+<tr>
+<td title='com.Bdt.qa.Testcases.LoginTest.verifyLoginWithInvalidEmailandPassword()'><b>verifyLoginWithInvalidEmailandPassword</b><br>Test class: com.Bdt.qa.Testcases.LoginTest</td>
+<td></td>
+<td>0</td>
+<td>com.Bdt.qa.Testcases.LoginTest@710c2b53</td></tr>
+<tr>
+<td title='com.Bdt.qa.Testcases.CoursepageTest.validate_complete_Csharp_and_Windows_Programingpage_Title()'><b>validate_complete_Csharp_and_Windows_Programingpage_Title</b><br>Test class: com.Bdt.qa.Testcases.CoursepageTest</td>
+<td></td>
+<td>0</td>
+<td>com.Bdt.qa.Testcases.CoursepageTest@14028087</td></tr>
+<tr>
+<td title='com.Bdt.qa.Testcases.CoursepageTest.validate_asp_NET_Core8page_Title()'><b>validate_asp_NET_Core8page_Title</b><br>Test class: com.Bdt.qa.Testcases.CoursepageTest</td>
+<td></td>
+<td>0</td>
+<td>com.Bdt.qa.Testcases.CoursepageTest@14028087</td></tr>
+<tr>
+<td title='com.Bdt.qa.Testcases.CoursepageTest.validate_jquery_AjaxandJsonpage_Title()'><b>validate_jquery_AjaxandJsonpage_Title</b><br>Test class: com.Bdt.qa.Testcases.CoursepageTest</td>
+<td></td>
+<td>0</td>
+<td>com.Bdt.qa.Testcases.CoursepageTest@14028087</td></tr>
+</table><p>
+</body>
+</html>

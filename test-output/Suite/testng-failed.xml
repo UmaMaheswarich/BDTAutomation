@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.Bdt.qa.Listeners.MyListeners"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.Bdt.qa.Testcases.CoursepageTest">
+        <methods>
+          <include name="validate_powershellpage_Title"/>
+          <include name="validate_CandDataStructurepage_Title"/>
+          <include name="validate_msPowerPlatform_premiumpage_Title"/>
+          <include name="validate_seleniumWithCSharppage_Title"/>
+          <include name="setup"/>
+          <include name="validate_iacUsingTerraformpage_Title"/>
+          <include name="validate_da_100page_Title"/>
+          <include name="validate_ssrspage_Title"/>
+          <include name="tearDown"/>
+          <include name="validate_oopsAndCpluspluspage_Title"/>
+          <include name="validate_ssaspage_Title"/>
+        </methods>
+      </class> <!-- com.Bdt.qa.Testcases.CoursepageTest -->
+      <class name="com.Bdt.qa.Testcases.HomepageTest">
+        <methods>
+          <include name="validateTitleOfVideospage"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.Bdt.qa.Testcases.HomepageTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
