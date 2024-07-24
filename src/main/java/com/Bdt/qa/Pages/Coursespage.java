@@ -180,7 +180,7 @@ public class Coursespage extends Basepage {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
-
+ // Using Data providers
 	public void clickRequiredCourse(String Coursename) {
 
 		WebElement course = driver.findElement(By.xpath("//li/a[contains(text(),'" + Coursename + "')]"));
