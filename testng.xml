@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-<listeners>
-    <listener class-name="com.Bdt.qa.Listeners.MyListeners" /> 
-</listeners>
-
-  <test thread-count="5" name="Test">
+  <test thread-count="5" name="Test" parallel="tests">
     <classes>
       <class name="com.Bdt.qa.Testcases.PackagepageTest"/>
+      <class name="com.Bdt.qa.Pages.Coursespage"/>
       <class name="com.Bdt.qa.Testcases.LoginTest"/>
-      
+      <class name="com.Bdt.qa.Pages.Homepage"/>
       <class name="com.Bdt.qa.Testcases.HomepageTest"/>
-      
+      <class name="com.Bdt.qa.Testcases.CoursesUsingDataProviders"/>
+      <class name="com.Bdt.qa.Testcases.VideopageTest"/>
       <class name="com.Bdt.qa.Testcases.CoursepageTest"/>
+      <class name="com.Bdt.qa.Testcases.EnrollNowpageTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
